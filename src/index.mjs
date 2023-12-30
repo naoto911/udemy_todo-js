@@ -20,7 +20,7 @@ const onClickAdd = () => {
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
   completeButton.addEventListener("click", () => {
-    // 押された完了ボタンの親に当たるliタグは以下の完了ボタンと削除ボタンを削除
+    // 押された完了ボタンの親に当たるliタグ配下の完了ボタンと削除ボタンを削除
     const moveTarget = completeButton.closest("li");
     completeButton.nextElementSibling.remove();
     completeButton.remove();
